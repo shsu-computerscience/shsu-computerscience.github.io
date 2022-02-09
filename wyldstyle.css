@@ -1,0 +1,217 @@
+.accordion {
+	background-color: #004990;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #569bbe; 
+}
+
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: #003a63;
+	overflow: hidden;
+	color: white;
+}
+.navbar {
+
+	background-color: #f56423;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #004990;
+	color: white;
+}
+
+.main {
+	padding: 16px;
+	margin-top: 10px;
+	height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.filterDiv {
+  float: left;
+  background-color: #004990;
+  color: #ffffff;
+  width: 600px;
+  line-height: 150px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #6caddf;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccdef0;
+}
+
+.btn.active {
+  background-color: #f56423;
+  color: white;
+}
+
+body {
+	background-color: #5f6062;
+	color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+a:link {
+  color: #f56423;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.maingrid {
+  padding: 2rem;
+}
+
+.maingrid > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 1rem;
+}
+
+.maingrid > ul > li {
+  border-radius: .5rem;
+   list-style-type: none;
+}
+
+.maingrid > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.maingrid > ul > li > figure > img {
+  width: 100%;
+}
+
+.maingrid > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.maingrid > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.maingrid > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.maingrid > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.dropbtn {
+  background-color: #f56423;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #569bbe;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #004990;
+}

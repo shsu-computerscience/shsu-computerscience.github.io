@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CCDC Manual</title>
+		<link rel="stylesheet" type="text/css" href="wyldstyle.css">
+		<link rel="icon" href="favicon.ico">
+		<div class="navbar">
+			<a href="wiki.html" target="_top" style="color: white">Main</a>
+			<a href="injects.html" target="_top" style="color: white">Injects</a>
+			<a href="rnotes.html" target="_top" style="color: white">Role Notes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Manuals</button>
+				<div class="dropdown-content">
+					<a href="manual.html">Everyone</a>
+					<a href="fwrtrmanual.html">Firewalls-Routers</a>
+					<a href="webmanual.html">Webserver</a>
+					<a href="dnsmanual.html">AD-DNS</a>
+					<a href="winmanual.html">Windows</a>
+					<a href="lnxmanual.html">Linux</a>
+					<a href="mailmanual.html">Mailserver</a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>
+		<section style="padding-top: 40px">
+			<div>
+				<h2>Competition manual</h2>
+			</div>
+			<div style="background-color: #57595b">
+				<h3>Initial steps</h3>
+				<ol>
+					<li>Scans -- system and network</li>
+						<dd>nmap</dd>
+					<li>Access controls / user privileges</li>
+						<dd>Update roles, rotate passwords and keys</dd>
+					<li>Rules for White Team</li>
+						<dd>Create special, separate rules to protect white team access</dd>
+					<li>Local firewalls</li>
+						<dd>iptables for Linux</dd>
+						<dd>Windows Defender Firewall for Windows</dd>
+					<li>Windows: make sure Defender is running and is up to date</li>
+					<li>Linux: make sure PAM is installed and running</li>
+					<li>SSL and SSH</li>
+						<dd>Verify certificates</dd>
+					<li>Get running services & disable unused services</li>
+						<dd>Windows</dd>
+						<dd>Linux</dd>
+				</ol>
+			</div>
+			<div style="background-color: #57595b">
+				<h3>Master Protocol</h3>
+				<ol>
+					<li>Loop 2-6.</li>
+					<li>Write down each task completed on your machine/s as you go for reference.</li>
+					<li>Work on specific machine tasks (Windows, Linux, Firewall, etc.)</li>
+					<li>Read and work on hardening tasks for your machine.</li>
+					<li>Call out that you are "finished with maintenance".</li>
+					<li>Ask if anyone needs help with maintenance.</li>
+					<li>Look for new injects or continue working on previous injects.</li>
+					<li>Ask if anyone needs help with injects.</li>
+				</ol>
+			</div>
+			<div style="background-color: #57595b">
+				<h3>Incident Response</h3>
+				<ol>
+					<li>Workstations will call out your name when your service goes down.</li>
+					<li>Work with captain to determine if incident is internal (you) or external (red team) caused.</li>
+					<li>Check running services and processes -- kill anything that shouldn't be running, try and start anything that should be running.</li>
+					<li>For unwanted service/process status -- remove user or update passwords.</li>
+					<li>Work with captain (and Google) to determine how to return services to proper state.</li>
+					<li>Write down incident and responses to return to service; if you cannot return to service, call out for help, share record.</li>
+				</ol>
+			</div>
+		</section>
+	</body>
+</html>

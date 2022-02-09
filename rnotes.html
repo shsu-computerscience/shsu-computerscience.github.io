@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CCDC Role Notes</title>
+		<link rel="stylesheet" type="text/css" href="wyldstyle.css">
+		<link rel="icon" href="favicon.ico">
+		<div class="navbar">
+			<a href="wiki.html" target="_top" style="color: white">Main</a>
+			<a href="injects.html" target="_top" style="color: white">Injects</a>
+			<a href="rnotes.html" target="_top" style="color: white">Role Notes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Manuals</button>
+				<div class="dropdown-content">
+					<a href="manual.html">Everyone</a>
+					<a href="fwrtrmanual.html">Firewalls-Routers</a>
+					<a href="webmanual.html">Webserver</a>
+					<a href="dnsmanual.html">AD-DNS</a>
+					<a href="winmanual.html">Windows</a>
+					<a href="lnxmanual.html">Linux</a>
+					<a href="mailmanual.html">Mailserver</a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>
+		<h2>Select Role</h2>
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('general')"> General</button>
+			<button class="btn" onclick="filterSelection('redteam')"> Red Team</button>
+			<button class="btn" onclick="filterSelection('firewalls')"> Firewalls</button>
+			<button class="btn" onclick="filterSelection('dns')"> DNS</button>
+			<button class="btn" onclick="filterSelection('webserver')"> Webserver</button>
+			<button class="btn" onclick="filterSelection('linux')"> Linux</button>
+			<button class="btn" onclick="filterSelection('windows')"> Windows</button>
+			<button class="btn" onclick="filterSelection('mailserver')"> Mail Server</button>
+		</div>
+		<div class="container">
+			<div class="filterDiv general">incident response (professionalism) can win back a lot of points despite failure</div>
+			<div class="filterDiv general"><q>the store changes over time</q></div>
+			<div class="filterDiv mailserver"><q>LEARN <a href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide" target="_blank">SPF!</a></q></div>
+			<div class="filterDiv general"><q>you are crazy not to <a href="https://www.stationx.net/nmap-cheat-sheet/" target="_blank">scan your own network</a></q></div>
+			<div class="filterDiv general"><q>Major upgrades are very dangerous, maybe stick to minor upgrades</q></div>
+			<div class="filterDiv general"><a href="https://www.beyondtrust.com/blog/entry/password-rotation-needed" target="_blank">rotate creds</a> on the system and monitor</div>
+			<div class="filterDiv redteam"><q>We had <a href="https://robertscocca.medium.com/%EF%B8%8F%EF%B8%8F-rce-to-shell-techniques-696e55b23fee" target="_blank">RCE on every team</a> within 5 minutes, did that team patch before we could exploit?</q></div>
+			<div class="filterDiv redteam">minecraft server was vulnerable to log4j</div>
+			<div class="filterDiv redteam"><q>Used <a href="https://www.cyberciti.biz/faq/understanding-etcshadow-file/" target="_blank">Shadow</a> (stolen) credentials to navigate more than anything</q></div>
+			<div class="filterDiv firewalls">UFW breaks iptables</div>
+			<div class="filterDiv dns"><q>No one ever <a href="https://activedirectorypro.com/how-to-configure-dns-aging-and-scavenging/" target="_blank">cleans up</a> DNS</q></div>
+			<div class="filterDiv dns">ICANN verification message means DNS is utterly destroyed</div>
+			<div class="filterDiv webserver"><q><a href="https://www.redhat.com/sysadmin/manage-permissions" target="_blank">lock</a> down <a href="https://www.linuxquestions.org/questions/linux-newbie-8/what-is-the-www-data-account-4175430741/" target="_blank">www-data</a> account</q></div>
+			<div class="filterDiv webserver">OWASP for web apps</div>
+			<div class="filterDiv linux"><q>learn iptables</q></div>
+			<div class="filterDiv firewalls"><a href="documents/Routers_and_Firewalls.pdf" target="_blank">Team Notes</a></div>
+			<div class="filterDiv firewalls"><q>Should have set up templates for rules beforehand</q><div>
+		</div>
+		<script src="scriptorama.js"></script>
+	</body>
+</html>

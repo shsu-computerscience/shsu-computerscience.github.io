@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CCDC Injects</title>
+		<link rel="stylesheet" type="text/css" href="wyldstyle.css">
+		<link rel="icon" href="favicon.ico">
+		<div class="navbar">
+			<a href="wiki.html" target="_top" style="color: white">Main</a>
+			<a href="injects.html" target="_top" style="color: white">Injects</a>
+			<a href="rnotes.html" target="_top" style="color: white">Role Notes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Manuals</button>
+				<div class="dropdown-content">
+					<a href="manual.html">Everyone</a>
+					<a href="fwrtrmanual.html">Firewalls-Routers</a>
+					<a href="webmanual.html">Webserver</a>
+					<a href="dnsmanual.html">AD-DNS</a>
+					<a href="winmanual.html">Windows</a>
+					<a href="lnxmanual.html">Linux</a>
+					<a href="mailmanual.html">Mailserver</a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>
+		<h2>Injects</h2>
+		<!--INJECT 1 BEGIN-->
+		<button class="accordion">1 -- 650pts -- Content Removal Policy</button>
+		<div class="panel">
+			<a href="documents/content_policy.pdf" target="_blank">Submission</a><br>
+			Blue Team,<br>
+			We just received a legitimate legal demand that we delete a Florp(tm) that somehow simultaneously violates GDPR, CCPA, DMCA, PIPEDA, as well as being hateful harassment against other users of our platform. All at once! I don't know which Florp(tm) it is, and I don't want you to go looking for it - it can't possibly be safe for work. The point is, we've never had to take down a Florp(tm), and we don't have a policy on this subject. We are not going to take any action until we have an approved policy in place, but we need to fast-track that document. Please send me a draft policy about the appropriate response to notices like this. What general steps do we need to take to evaluate a request/demand to take down a Florp(tm) or data about a Florper(R)? When do we need to consult our legal counsel about removing a Florp(tm)? Please make the policy straightforward so that any employee or moderator can follow it. This policy should cover straightforward situations and provide guidance for when we need help from lawyers or other experts.<br>
+			We'll combine this with what our lawyers tell us, so don't worry about getting every detail of the law correct. We just need a good starting point.<br>
+			Thanks,<br>
+			CEO<br>
+			<em>P.S. from White Team - Our expectation is a 1-3 page policy document covering the company's basic responsibilities to delete user/customer data or remove social media posts. The laws/regulations mentioned in the inject have common characteristics, and we hope you'll identify them - they'll make the policy simpler (do not create different sections for each law/regulation). Submit a policy that covers the most frequent reasons a global social media company may be required to remove content. It shouldn't cover every possible situation.</em><br>
+			<em>P.P.S. from White Team - This should NOT be a Privacy Policy like the ones you see on websites that you use. This is for employees of Florp to follow, NOT for users/customers of Florp to read.</em>
+		</div>
+		<!--INJECT 1 END-->
+		<!--INJECT 2 BEGIN-->
+		<button class="accordion">2 -- 400pts -- Active Directory Forest</button>
+		<div class="panel">
+			Blue Team,<br>
+			Florp has decided that they need to bring in more vendors, currently we treat these vendors as employees but Florp feels that long term this is not the best approach. Florp desires to have a separate Active Directory forest for the vendors and one of your predecessors configured a domain controller and a new forest for this project.<br>
+			To ensure that vendors are able to access corporate resources as needed we require that there be a 2-way trust in place between the 2 Active Directory forests. Success will be judged if a corporate user can authenticate in the "vendor" domain and a vendor user can authenticate in the corporate domain<br>
+			We found this written on a sticky note at the office, we think it is the credentials for the new forest<br>
+			USERNAME: vendoradmin@vendros.team##.florp.external<br>
+			PASSWORD: princess<br>
+			Here is a list of users we need in the vendor forest as well: https://xc5fve4r5tghg3g8.s3.us-west-2.amazonaws.com/b4df701e-86bd-11ec-8eb8-00ffe2860236.txt<br>
+			Make sure their department and job title are correct. We can't have bad information in our source of truth!<br>
+			Thanks,<br>
+			CTO<br>
+			<em>PS from Black Team: You may need to configure conditional forwarders from the existing domain controllers in the existing forest to the domain controller in the new vendor forest</em>
+		</div>
+		<!--INJECT 2 END-->
+		<!--INJECT 3 BEGIN-->
+		<button class="accordion">3 -- 200pts -- SSL for Florp</button>
+		<div class="panel">
+			Blue Team,<br>
+			We have a responsibility to safeguard our users! How have you let Florp run on unsecured HTTP for so long? We need all traffic to Florp secured with HTTPS. Anyone using just HTTP to connect should be redirected to HTTPS. We don’t have the budget to pay a fancy certificate authority so you’ll just have to figure out another way.<br>
+			Thanks,<br>
+			CTO<br>
+			<em>PS from White Team: we will not be validating the chain of trust on a certificate presented, and we cannot offer any certificate signing. You'll have to do it yourself.</em>
+		</div>
+		<!--INJECT 3 END-->
+		<!--INJECT 4 BEGIN-->
+		<button class="accordion">4 -- 400pts --Corporate Training on Phishing</button>
+		<div class="panel">
+			Blue Team,<br>
+			I’m worried about what our users know about phishing. We’ve done some training in the past but it doesn’t seem to work. Would you please prepare a presentation that we can start using as annual training?<br>
+			Thank you,<br>
+			CTO<br>
+			<em>PS from White Team: Go a little further than “don’t click on links in suspicious emails.” Please provide a slide deck (presentation/PowerPoint) and save it out as a PDF to submit in the Portal.</em>
+		</div>
+		<!--INJECT 4 END-->
+		<!--INJECT 5 BEGIN-->
+		<button class="accordion">5 -- 300pts -- Firewall for Minecraft</button>
+		<div class="panel">
+			Blue Team,<br>
+			We do have some fun here, and I support that. But we can’t just host an open Minecraft server for all the world to see. I promise I won’t tell Accounting about the Minecraft server you have hidden in our cloud infrastructure, but you better make sure it only accepts connections from the office network. Our employees really like it, so make sure you don’t take it down.<br>
+			Love Always,<br>
+			CTO
+		</div>
+		<!--INJECT 5 END-->
+		<!--INJECT 6 BEGIN-->
+		<button class="accordion">6 -- 100pts -- DNS Records for Outbound Mail</button>
+		<div class="panel">
+			Resources: <a href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide" target="_blank">one</a><br>
+			Blue Team,<br>
+			The CMO was complaining to me that our outbound emails keep landing in people’s spam boxes! We need our emails to be seen by the people we’re trying to reach. Make sure we have Sender Policy (SPF) records set up to properly authenticate our emails.<br>
+			They are going to do a big marketing push at <em>INJECT END TIME</em> so make sure it’s ready by then.<br>
+			Love Always,<br>
+			CTO<br>
+			<em>PS from White Team: Though usually a request like this from Marketing would likely involve authenticating a marketing-tech/newsletter vendor to send emails on your domain, limit your work to only your own email server.</em>
+		</div>
+		<!--INJECT 6 END-->
+		<!--INJECT 7 BEGIN-->
+		<button class="accordion">7 -- 300pts -- Redline a Policy</button>
+		<div class="panel">
+			<a href="documents/Redline_Policy_Team02.pdf" target="_blank">Submission</a><br>
+			Blue Team,<br>
+			Legal was going through our employee handbook and noticed this policy document about data handling. I realized it hasn’t been updated in a while. Would you redline this for me and I’ll get it back over to them to update.<br>
+			https://xc5fve4r5tghg3g8.s3.us-west-2.amazonaws.com/7fe3e7ae-8655-11ec-b16d-00ffe2860236.doc<br>
+			Thanks,<br>
+			CEO<br>
+			<em>PS from White Team: To “redline” a contract or legal document simply means to edit it, but show the edits. “Track Changes” in Word will do this, if you select “Show Markup.” You can also manually color edits as red and: strikethrough deletions and italicize additions. The document you submit must include a way for the grader to see the changes.</em><br>
+			<em>PPS from White Team: Do not drastically expand or change what this document covers. For example, do not define WHAT the RPO,RTO, etc are, and don’t perform the actions the policy outlines. Only review the policy as-is and suggest any edits you think would make it a stronger policy.</em>
+		</div>
+		<!--INJECT 7 END-->
+		<!--INJECT 8 BEGIN-->
+		<button class="accordion">8 -- 100pts -- What is a Docker?</button>
+		<div class="panel">
+			Resources: <a href="documents/Docker_1.pdf" target="_blank">one</a><br>
+			<a href="documents/Docker.pdf" target="_blank">Submission</a><br>
+			Blue Team,<br>
+			We want Florp to be a shining example of modern technology and best practices! I’ve heard a lot of talk lately about “containers” and something called a Docker. What’s that? We need that! Right? My nephew was saying Docker runs everything now, but I thought we were using a Linux. Create a short presentation on what this dock thing is, and what it would take to get our main app on it.<br>
+			Love Always,<br>
+			CEO<br>
+			<em>PS from White Team: Answer his question; don’t actually do the migration.</em>
+		</div>
+		<!--INJECT 8 END-->
+		<script src="scriptorama.js"></script>
+	</body>
+</html>
