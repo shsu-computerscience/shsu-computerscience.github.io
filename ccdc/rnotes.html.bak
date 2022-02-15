@@ -27,7 +27,7 @@
 		</div>
 	</head>
 	<body>
-		<section style="padding-top: 40px">
+		<section style="padding: 40px">
 			<h2>Select Role</h2>
 			<div id="myBtnContainer">
 				<button class="btn active" onclick="filterSelection('all')"> Show all</button>

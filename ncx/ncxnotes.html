@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>NCX Role Notes</title>
+		<link rel="stylesheet" type="text/css" href="../wyldstyle.css">
+		<link rel="icon" href="favicon.ico">
+		<div class="navbar">
+			<a href="../index.html" target="_top" style="color: white">Home</a>
+			<a href="ncxwiki.html" target="_top" style="color: white">Main</a>
+			<a href="ncxnotes.html" target="_top" style="color: white">Role Notes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Manuals</button>
+				<div class="dropdown-content">
+					<a href="ncxsw.html">Software Development</a>
+					<a href="ncxmal.html">Malware</a>
+					<a href="ncxpol.html">Policy</a>
+					<a href="ncxcry.html">Cryptography</a>
+					<a href="ncxlive.html">Combat</a>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body>
+		<section style="padding-top: 55px">
+			<div><q>Effectiveness in the cyber domain requires a creative mindset and a flexibility in problem solving approach.</q></div>
+			<h2>Select Role</h2>
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				<button class="btn" onclick="filterSelection('general')"> General</button>
+				<button class="btn" onclick="filterSelection('crypto')"> Cryptography</button>
+				<button class="btn" onclick="filterSelection('software')"> Software</button>
+				<button class="btn" onclick="filterSelection('malware')"> Malware</button>
+				<button class="btn" onclick="filterSelection('policy')"> Policy</button>
+				<button class="btn" onclick="filterSelection('live')"> Combat/Live</button>
+			</div>
+			<div class="container">
+				<div class="filterDiv live">tbd</div>
+				<div class="filterDiv policy">tbd</div>
+			</div>
+		</section>
+		<script src="../scriptorama.js"></script>
+	</body>
+</html>
