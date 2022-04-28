@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Save form Data in a Text File using JavaScript</title>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>SHSU Computer Science</title>
+		<link rel="stylesheet" type="text/css" href="../wyldstyle.css">
+		<link rel="stylesheet" type="text/css" href="simplegrid.css">
+		<link rel="icon" href="../favicon-shsu.png">
     <style>
         * {
             box-sizing: border-box;
@@ -28,18 +34,50 @@
     </style>
 </head>
 <body>
-    <div>
-        <!--Add few elements to the form-->
-        <div>
-            <input type="text" id="txtTitle" placeholder="Section Title" />
-        </div>
-        <div>
-            <textarea id="msgMessage" name="msgMessage" placeholder="Section Text" style="height:100px"></textarea>
-        </div>
-        <div>
-            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
-        </div>
-    </div>
-	<script src="formdata.js"></script>
+	<div style="text-align: center">
+		<a href="newstemplate.html">Template</a>
+	</div>
+	<div class="grid-container">
+		<div>
+			<img src="Drawing1.jpg">
+		</div>
+		<div>
+			<div>
+				<input type="text" id="txtTitle01" placeholder="Section Title" />
+			</div>
+			<div>
+				<textarea id="msgMessage01" name="msgMessage" placeholder="Section Text" style="height:100px"></textarea>
+			</div>
+			<div>
+				<input type="button" id="bt01" value="Generate Section" onclick="saveFile()" />
+			</div>
+		</div>
+	</div>
+	<div class="grid-container">
+		<div>
+			<img src="Drawing7.jpg">
+		</div>
+		<div>
+			<div>
+				<input type="text" id="txtTitle02" placeholder="Section Title" />
+			</div>
+			<div>
+				<input type="text" id="parTitle02" placeholder="Paragraph Title" />
+			</div>
+			<div>
+				<textarea id="msgMessage02" name="msgMessage02" placeholder="Paragraph Text" style="height:100px"></textarea>
+			</div>
+			<div>
+				<input type="text" id="picTitle02" placeholder="Picture Title" />
+			</div>
+			<div>
+				<textarea id="msgMessage02-1" name="msgMessage02-1" placeholder="Paragraph Text" style="height:100px"></textarea>
+			</div>
+			<div>
+				<input type="button" id="bt02" value="Generate Section" onclick="saveFile()" />
+			</div>
+		</div>
+	</div>
+	<script src="middlepic.js"></script>
 </body>
 </html>
